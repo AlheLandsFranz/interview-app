@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, Form, Input, Label } from 'reactstrap';
-// import { Form, Input, Button  } from 'bootstrap';
-import { data } from '../utils/data';
+import { Button, Form, Input } from 'reactstrap';
 
 export default function FormData(): JSX.Element {
 
@@ -64,7 +62,7 @@ export default function FormData(): JSX.Element {
     }
     return (
         <div>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '1rem', alignItems: 'center' }}>
 
                 <Form onSubmit={(e) => handleSubmit(e)}>
                     <div className="grid text-center" style={{ justifyContent: 'center' }}>
@@ -88,8 +86,8 @@ export default function FormData(): JSX.Element {
                 {
                     render.nombre.length > 0 &&
                     <div style={{
-                        backgroundColor: '#FF4A4A', height: 'max-content', borderRadius: '1rem', margin: '1rem',
-                        padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center'
+                        backgroundColor: 'rgba(220, 53, 69, 0.6)', height: 'max-content', borderRadius: '1rem', margin: '1rem',
+                        padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#FFF7BC'
                     }}>
                         <h1>{render.nombre}</h1>
                         <p>{render.edad}</p>

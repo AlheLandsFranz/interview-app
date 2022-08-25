@@ -12,14 +12,14 @@ export default function DataTable(): JSX.Element {
     }
 
     return (
-        <div style={{ marginTop: '2rem' }}>
+        <div style={{ marginTop: '2rem', padding: '0.2rem' }}>
             <Table
                 hover
                 responsive
-                size=""
+                size= ''
             >
-                <thead>
-                    <tr>
+                <thead >
+                    <tr className="table-dark">
                         <th>
                             #
                         </th>
@@ -35,13 +35,13 @@ export default function DataTable(): JSX.Element {
                         <th>
                             Hobbie
                         </th>
-                    </tr>
+                    </tr >
                 </thead>
                 <tbody>
                     {
                         data.map((persona: IDataPersona, index: number) => {
                             return (
-                                <tr key={index}>
+                                <tr key={index} className="table-dark">
                                     <th scope="row">
                                         {index + 1}
                                     </th>

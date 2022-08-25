@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins&family=Stalinist+One&display=swap');
 
 body {
   margin: 0;
-  background-color: #FFF5E1;
+  background-color: #141414;
   font-family: 'Poppins', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: '#319DA0'
+}
+
+img:hover {
+  border: 2px solid rgba(220, 53, 70, 0);
+}
+
+img:active {
+  border: 3px solid rgba(220, 53, 70, 0);
 }
 
 code {
